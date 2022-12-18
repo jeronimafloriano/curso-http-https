@@ -75,8 +75,28 @@ Com isso, vamos pensar no cenário onde realizamos o login em um site. Após log
 ![image](https://user-images.githubusercontent.com/90730406/208315663-6cf3ba88-9d33-40fe-b207-81331e6406ee.png)
 
 
-Um cookie fica associado ao domínio que foi salvo (podemos ter um cookie para www.google.com.br, e outro para https://www.microsoft.com/pt-br e para vários outros sites) e pode ser manipulado e até apagado pelo navegador. Um site ou web app pode ter vários cookies.
+Um cookie fica associado ao domínio que foi salvo (podemos ter um cookie para www.google.com.br, e outro para https://www.microsoft.com/pt-br e para vários outros sites) e pode ser manipulado e até apagado pelo navegador. Um site ou web app pode ter vários cookies e acessando as configurações do navegador conseguimos visualizar os cookies salvos.
 
 
+# Métodos HTTP
+O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser executada para um dado recurso. 
 
+Ou seja, podemos indicar qual será a ação realizada ao acessarmos um determinado domínio e recurso. Esses métodos são:
+
+GET - Receber, acessar dados
+POST - Submeter dados
+DELETE - remover um recurso
+PUT/PATCH - Atualizar um recurso
+
+Os métodos GET e POST são os mais utilizados no desenvolvimento web.
+
+# Respostas HTTP
+As respostas HTTP possuem um código, e o código da resposta dá uma dica ao cliente se a requisição foi um sucesso ou não e qual foi o problema em caso de falha. Esses códigos são os Status Code no HTTP, que são categorizados por suas iniciais:
+
+2XX - Successful
+3XX - Redirection
+4XX - Client error responses
+5XX - Server error responses
+
+A tabela completa de mensagens HTTP pode ser vista em: https://www.w3schools.com/tags/ref_httpmessages.asp.
 
