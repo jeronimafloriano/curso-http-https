@@ -24,6 +24,7 @@ O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma 
 
 Cada certificado possui uma chave pública que irá criptografar os dados que o navegador enviar para o servidor. O servidor tem uma chave privada que só ele conhece e que consegue descriptografar os dados que foram criptografados com a chave pública para ler a requisição.
 
+![image](https://user-images.githubusercontent.com/90730406/208315227-4d223db4-f551-44fc-851f-5551dbb08022.png)
 
 
 Os tipos de criptografia
