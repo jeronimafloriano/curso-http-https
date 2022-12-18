@@ -75,7 +75,7 @@ Com isso, vamos pensar no cenário onde realizamos o login em um site. Após log
 ![image](https://user-images.githubusercontent.com/90730406/208315663-6cf3ba88-9d33-40fe-b207-81331e6406ee.png)
 
 
-Um cookie fica associado ao domínio que foi salvo (podemos ter um cookie para www.google.com.br, e outro para www.https://www.microsoft.com/pt-br) e pode ser manipulado e até apagado pelo navegador. Um site ou web app pode ter vários cookies.
+Um cookie fica associado ao domínio que foi salvo (podemos ter um cookie para www.google.com.br, e outro para https://www.microsoft.com/pt-br e para vários outros sites) e pode ser manipulado e até apagado pelo navegador. Um site ou web app pode ter vários cookies.
 
 
 
