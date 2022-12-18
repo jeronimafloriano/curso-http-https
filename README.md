@@ -18,7 +18,7 @@ Navegador -> requisição(envio de dados) -> Servidor
 Como o HTTP só trafega texto puro e também não utiliza nenhum tipo de criptografia, isso acaba o deixando inseguro, pois, ao enviarmos dados na requisição como um email e senha por exemplo, estamos enviando o texto puro para o servidor, visível para qualquer um que esteja mal intencionado. Por isso temos o HTTPS, que é o HTTP + uma camada de segurança(SSL/TLS).
 
 
-O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma identidade e é emitido por uma entidade certificadora(CA - Certificate Authority), cuja função é garantir que os certificados que estão sendo utilizados podem ser confiados. Ao acessarmos um site que trafega utilizando o HTTPS podemos clicar no ícone do certificado e obter informações sobre o mesmo.
+O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma identidade e é emitido por uma entidade certificadora(CA - Certificate Authority), cuja função é garantir que os certificados que estão sendo utilizados podem ser confiados. Ao acessarmos um site que trafega utilizando o HTTPS podemos clicar no ícone do cadeado e obter informações sobre o certificado utilizado.
 
 ![image](https://user-images.githubusercontent.com/90730406/208315001-dd990240-4129-4b77-96e5-295da6a223ca.png)
 
