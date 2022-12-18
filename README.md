@@ -64,3 +64,19 @@ Obs: Vários protocolos definem a sua porta padrão, como por exemplo o FTP que 
 Além do protocolo e domínio o endereço também pode especificar um recurso, que é algo concreto que queremos acessar, como um documento, uma foto ou qualquer outra coisa. 
 ![image](https://user-images.githubusercontent.com/90730406/208314636-65b29e3e-9997-40e5-9d58-fd28a6e830ff.png)
 
+# Modelo Requisição e Resposta
+
+O protocolo HTTP segue o modelo de requisição-resposta, onde o cliente inicia a comunicação realizando a requisição e o servidor gera a resposta. Para que o servidor gere essa resposta a requisição precisa ter todas as informações necessárias, o que também a faz ser sempre independente de outras requisições.
+
+Além disso, não é possível guardar o estado(informações) dessas requisições, o que é uma característica do HTTP que chamamos de Stateless. Quando realizamos uma requisição, o HTTP não sabe sobre outras requisições e informações que foram enviadas em momentos anteriores, ele conhece somente sobre aquela requisição que está sendo enviada naquele momento.
+
+Com isso, vamos pensar no cenário onde realizamos o login em um site. Após logarmos, faz sentido em cada página que formos acessar termos que enviar novamente os dados de email e senha na requisição? Isso seria muito trabalhoso. Para que isso não ocorra, o servidor gera uma identificação e passa ela para o navegador guardá-la e enviá-la nas próximas requisições, ou seja, uma sessão, que é um tempo que o cliente permanece ativo no sistema. Essa sessão irá guardar os cookies http, que são um pequeno arquivo de texto normalmente criado pela aplicação web, para guardar algumas informações sobre o usuário no navegador, não necessariamente sobre login.
+
+![image](https://user-images.githubusercontent.com/90730406/208315663-6cf3ba88-9d33-40fe-b207-81331e6406ee.png)
+
+
+Um cookie fica associado ao domínio que foi salvo (podemos ter um cookie para www.google.com.br, e outro para www.https://www.microsoft.com/pt-br) e pode ser manipulado e até apagado pelo navegador. Um site ou web app pode ter vários cookies.
+
+
+
+
