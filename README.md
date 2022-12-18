@@ -49,3 +49,8 @@ Ex: http://www.teste.com.br:81
 A porta padrão para o HTTP é 80 e para o HTTPS a porta padrão é 443. Ou seja, mesmo que não digitamos essas portas ao buscar por um endereço na internet, elas estão lá.
 
 Obs: Vários protocolos definem a sua porta padrão, como por exemplo o FTP que usa 21 ou SSH que usa 22.
+
+# Recursos
+Além do protocolo e domínio, o endereço também pode especificar um recurso, que é algo concreto que queremos acessar, como um documento, uma foto ou qualquer outra coisa. 
+![image](https://user-images.githubusercontent.com/90730406/208314636-65b29e3e-9997-40e5-9d58-fd28a6e830ff.png)
+
