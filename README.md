@@ -1,7 +1,8 @@
 # curso-http-https
-Repositório contendo um resumo sobre o que é e como funciona HTTP e HTTPS
+Resumo sobre o que é e como funciona HTTP e HTTPS
 
 
+# HTTP
 O HTTP é um protocolo de comunicação para a  web. Protocolo, nesse contexto, tem o sentido de definiçao, normas e regras de comunicação. 
 Essa comunicação que estamos falando se trata da comunicação web, na qual utilizamos um navegador(browser) como o Chrome, Firefox, Opera entre outros. Mas quem são os agentes que participam dessa comunicação? Nesse caso, para a comunicação ocorrer  precisamos de um cliente e um servidor. O cliente é quem inicia essa comunicação, ele enviará um pedido - uma requisição - solicitando alguma coisa ou enviando alguma informação, e o servidor irá processar aquela informação e devolver uma resposta. E toda essa troca de mensagens é feita seguindo as normas do protocolo HTTP.
 
