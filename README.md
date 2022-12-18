@@ -8,6 +8,9 @@ Essa comunicação que estamos falando se trata da comunicação web, na qual ut
 
 Navegador -> requisição(envio de dados) -> Servidor
 
+![image](https://user-images.githubusercontent.com/90730406/208314917-5891714e-0b92-423c-90f6-6f49d2b551d3.png)
+
+
 É importante frisarmos que as mensagens trocadas no HTTP são apenas em texto puro e que ele é indepente de tecnologias específicas ou linguagens de programação. O nosso celular por exemplo, o tempo todo usa o HTTP para enviar requisições através de aplicativos.
 
 
@@ -15,7 +18,13 @@ Navegador -> requisição(envio de dados) -> Servidor
 Como o HTTP só trafega texto puro e também não utiliza nenhum tipo de criptografia, isso acaba o deixando inseguro, pois, ao enviarmos dados na requisição como um email e senha por exemplo, estamos enviando o texto puro para o servidor, visível para qualquer um que esteja mal intencionado. Por isso temos o HTTPS, que é o HTTP + uma camada de segurança(SSL/TLS).
 
 
-O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma identidade e é emitido por uma entidade certificadora(CA - Certificate Authority), cuja função é garantir que os certificados que estão sendo utilizados podem ser confiados. Cada certificado possui uma chave pública que irá criptografar os dados que o navegador enviar para o servidor. O servidor tem uma chave privada que só ele conhece e que consegue descriptografar os dados que foram criptografados com a chave pública para ler a requisição.
+O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma identidade e é emitido por uma entidade certificadora(CA - Certificate Authority), cuja função é garantir que os certificados que estão sendo utilizados podem ser confiados. Ao acessarmos um site que trafega utilizando o HTTPS podemos clicar no ícone do certificado e obter informações sobre o mesmo.
+
+![image](https://user-images.githubusercontent.com/90730406/208315001-dd990240-4129-4b77-96e5-295da6a223ca.png)
+
+Cada certificado possui uma chave pública que irá criptografar os dados que o navegador enviar para o servidor. O servidor tem uma chave privada que só ele conhece e que consegue descriptografar os dados que foram criptografados com a chave pública para ler a requisição.
+
+
 
 Os tipos de criptografia
 Quando a comunicação que é feita diretamente utilizando a chave pública do cliente e a chave privada do servidor chamamos de criptografia assimétrica. Essa comunicação é um pouco lenta, pois para cada requisição é necessário criptografar os dados com a chave pública e descriptografar os dados com a chave privada. 
