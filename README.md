@@ -36,3 +36,10 @@ https://www.google.com.br
 O endereço é como localizamos uma página na internet. Cada endereço tem o seu IP e o DNS (Domain Name System ou servidor de domínios) fornece o IP de um nome de domínio, ou seja, realiza a tradução do nome de um domínio para o endereço de IP. 
 
 Exemplo: Ao acessarmos o endereço google.com o DNS busca o IP correspondente, no caso 142.251.132.46.
+
+
+# Portas
+Uma porta é como um ponto de comunicação com um servidor e o servidor pode ter várias portas abertas. Por isso, podemos informar a porta ao realizar uma requisição para especificar qual porta queremos buscar no servidor e, caso não informarmos, o servidor irá buscar a porta padrão.
+A porta padrão para o HTTP é 80 e para o HTTPS a porta padrão é 443. Ou seja, mesmo que não digitamos essas portas ao buscar por um endereço na internet, elas estão lá.
+
+Obs: Vários protocolos definem a sua porta padrão, como por exemplo o FTP que usa 21 ou SSH que usa 22.
