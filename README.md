@@ -100,3 +100,17 @@ As respostas HTTP possuem um código, e o código da resposta dá uma dica ao cl
 
 A tabela completa de mensagens HTTP pode ser vista em: https://www.w3schools.com/tags/ref_httpmessages.asp.
 
+# Web Services
+O Web Service é uma aplicação que atua como um serviço, e que não necessariamente utiliza um browser para as requisições.
+
+Eles disponibilizam uma funcionalidade na web, através do protocolo HTTP. As funcionalidades variam muito e dependem muito da empresa e do negócio dela. O Google e Facebook por exemplo, possuem muitos Web Services para acessar um usuário, ver os posts dele, interesses, etc. Muitas vezes esses serviços são pagos.
+
+A grande diferença de um Web Service é que os dados não vêm no formato HTML, e sim em algum formato independente da visualização, como XML ou JSON. Com isso, a comunicação entre sistemas é muito mais simples. Com um Web service pode-se trocar informações entre sistemas sem precisar recolher informações detalhadas sobre o funcionamento de cada um. Eles auxiliam na ligação de qualquer tipo de sistema, independentemente de plataforma (Windows, Linux, etc.) ou linguagens de programação (Java, Javascript, PHP, etc.) utilizadas.
+
+# REST
+Rest significa  Representational State Transfer que, em português, é “Transferência de Estado Representacional”. É um conjunto de princípios para estabelecer a a comunicação entre aplicações, a arquitetura na Web. Ele define a união da URI/URL com os métodos HTTP para determinarem a ação:
+
+- http://usuarios.com/usuario + GET (retorna todos os usuários)
+- http://usuarios.com/usuario + POST (adiciona um usuário)
+- http://usuarios.com/usuario/1 + PUT/PATCH (atualiza o usuário 1)
+- http://usuarios.com/usuario/1 + DELETE (deleta o usuário 1)
