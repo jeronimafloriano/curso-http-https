@@ -83,20 +83,20 @@ O protocolo HTTP define um conjunto de métodos de requisição responsáveis po
 
 Ou seja, podemos indicar qual será a ação realizada ao acessarmos um determinado domínio e recurso. Esses métodos são:
 
-GET - Receber, acessar dados
-POST - Submeter dados
-DELETE - remover um recurso
-PUT/PATCH - Atualizar um recurso
+- GET - Receber, acessar dados
+- POST - Submeter dados
+- DELETE - remover um recurso
+- PUT/PATCH - Atualizar um recurso
 
 Os métodos GET e POST são os mais utilizados no desenvolvimento web.
 
 # Respostas HTTP
 As respostas HTTP possuem um código, e o código da resposta dá uma dica ao cliente se a requisição foi um sucesso ou não e qual foi o problema em caso de falha. Esses códigos são os Status Code no HTTP, que são categorizados por suas iniciais:
 
-2XX - Successful
-3XX - Redirection
-4XX - Client error responses
-5XX - Server error responses
+- 2XX - Successful
+- 3XX - Redirection
+- 4XX - Client error responses
+- 5XX - Server error responses
 
 A tabela completa de mensagens HTTP pode ser vista em: https://www.w3schools.com/tags/ref_httpmessages.asp.
 
