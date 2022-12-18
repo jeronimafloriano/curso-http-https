@@ -114,3 +114,5 @@ Rest significa  Representational State Transfer que, em português, é “Transf
 - http://usuarios.com/usuario + POST (adiciona um usuário)
 - http://usuarios.com/usuario/1 + PUT/PATCH (atualiza o usuário 1)
 - http://usuarios.com/usuario/1 + DELETE (deleta o usuário 1)
+
+O rest também define a utilização de cabeçalhos na requisição para especificar a representação dos dados (JSON/XML...).
