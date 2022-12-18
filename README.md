@@ -26,8 +26,10 @@ Por isso, o HTTPS usa uma combinação dos dois tipo de criptografia. Inicialmen
 
 # Endereços
 O endereço é uma URL e é como localizamos uma página na internet. A URL começa com o protocolo, seguido pelo domínio.
-Os elementos de um endereço
-https://www.google.com.br
+
+Os elementos de um endereço são:
+
+Ex: https://www.google.com.br
 
 - https - protocolo
 - google - domínio, uma referência ao IP do servidor.
