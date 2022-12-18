@@ -20,6 +20,19 @@ O HTTPS funciona a a partir de um certificado digital, que é como se fosse uma 
 Os tipos de criptografia
 Quando a comunicação que é feita diretamente utilizando a chave pública do cliente e a chave privada do servidor chamamos de criptografia assimétrica. Essa comunicação é um pouco lenta, pois para cada requisição é necessário criptografar os dados com a chave pública e descriptografar os dados com a chave privada. 
 
-Por outro lado, temos a criptografia simétrica, que usa a mesma chave para cifrar e decifrar os dados. No entendo, isso não seria tão seguro, não é mesmo?
+Por outro lado, temos a criptografia simétrica, que usa a mesma chave para cifrar e decifrar os dados. No entanto, isso não seria tão seguro, não é mesmo?
 
 Por isso, o HTTPS usa uma combinação dos dois tipo de criptografia. Inicialmente, a comunicação começa com a criptografia assimétrica, mas depois de iniciada o cliente gera uma chave simétrica ao vivo só para ele e o servidor com o qual está se comunicando naquele momento. Essa chave exclusiva (e simétrica) é então enviada para o servidor utilizando a criptografia assimétrica (chave privada e pública) e então é utilizada para o restante da comunicação.
+
+# Endereços
+Os elementos de um endereço
+https://www.google.com.br
+
+- https - protocolo
+- google - domínio, uma referência ao IP do servidor.
+	- .com - sub-domínio
+	- .br - raiz
+
+O endereço é como localizamos uma página na internet. Cada endereço tem o seu IP e o DNS (Domain Name System ou servidor de domínios) fornece o IP de um nome de domínio, ou seja, realiza a tradução do nome de um domínio para o endereço de IP. 
+
+Exemplo: Ao acessarmos o endereço google.com o DNS busca o IP correspondente, no caso 142.251.132.46.
