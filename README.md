@@ -108,11 +108,27 @@ Eles disponibilizam uma funcionalidade na web, através do protocolo HTTP. As fu
 A grande diferença de um Web Service é que os dados não vêm no formato HTML, e sim em algum formato independente da visualização, como XML ou JSON. Com isso, a comunicação entre sistemas é muito mais simples. Com um Web service pode-se trocar informações entre sistemas sem precisar recolher informações detalhadas sobre o funcionamento de cada um. Eles auxiliam na ligação de qualquer tipo de sistema, independentemente de plataforma (Windows, Linux, etc.) ou linguagens de programação (Java, Javascript, PHP, etc.) utilizadas.
 
 # REST
-Rest significa  Representational State Transfer que, em português, é “Transferência de Estado Representacional”. É um conjunto de princípios para estabelecer a a comunicação entre aplicações, a arquitetura na Web. Ele define a união da URI/URL com os métodos HTTP para determinarem a ação:
+Rest significa  Representational State Transfer que, em português, é “Transferência de Estado Representacional”. É um conjunto de princípios de arquitetura para estabelecer a a comunicação entre aplicações na arquitetura na Web. Ele define a união da URI/URL com os métodos HTTP para determinarem a ação:
 
 - http://usuarios.com/usuario + GET (retorna todos os usuários)
 - http://usuarios.com/usuario + POST (adiciona um usuário)
 - http://usuarios.com/usuario/1 + PUT/PATCH (atualiza o usuário 1)
 - http://usuarios.com/usuario/1 + DELETE (deleta o usuário 1)
 
-O rest também define a utilização de cabeçalhos na requisição para especificar a representação dos dados (JSON/XML...).
+Por ser um conjunto de princípios, fica nas mãos do desenvolvedor o compromisso de seguir as definições do REST.
+
+O REST também define a utilização de cabeçalhos na requisição para especificar a representação dos dados (JSON/XML...).
+
+# SOAP 
+SOAP significa "simple object access protoco" ou "protocolo de acesso a objetos simples" e é utilizado para comunicação entre aplicações desenvolvidas em diferentes linguagens e plataformas. Ele é um protocolo oficial mantido pela World Wide Web Consortium (W3C) e também se baseia no HTTP, com a diferença de que as suas mensagem são baseadas em XML.
+
+O SOAP define uma série de regras que podem acabar deixando a aplicação um pouco mais lenta.
+
+A principal diferença entre SOAP e REST é que SOAP é um protocolo e REST, não. Normalmente, uma API será baseada em REST ou SOAP, dependendo do caso de uso e das preferências do desenvolvedor. Já os Web Services em sua grande maioria utilizam o SOAP.
+
+# HTTP2
+As principais diferenças entre o HTTP 1.1 e  HTTP/2 são:
+- Utilização padrão do GZIP, que "comprime" as respostas das requisições.
+- Os headers(cabeçalhos) das requisições e respostas passam a ser binários e são comprimidos usando um algoritmo chamado HPACK para diminuir o volume de dados trafegados;
+- Adição da camada TLS, que criptografa os dados das requisições fornecendo maior segurança;
+- Utilização dos cabeçalhos/headers statefull: A partir do HTTP2 não precisamos mais repetir os cabeçalhos que já enviamos em uma requisição anterior. Quando fazemos uma requisição para um recurso X onde teríamos os cabeçalhos exatamente iguais aos da requisição anterior, nós não precisamos enviar novamente esses dados. Será necessário alterar o cabeçalho apenas quando enviarmos ou solicitarmos novos dados, e nesse caso enviamos apenas os cabeçalhos que são diferentes.
