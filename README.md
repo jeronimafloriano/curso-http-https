@@ -127,6 +127,12 @@ O SOAP define uma série de regras que podem acabar deixando a aplicação um po
 A principal diferença entre SOAP e REST é que SOAP é um protocolo e REST, não. Normalmente, uma API será baseada em REST ou SOAP, dependendo do caso de uso e das preferências do desenvolvedor. Já os Web Services em sua grande maioria utilizam o SOAP.
 
 # HTTP2
+O HTTP é um protocolo que surgiu em meados dos anos 1980/90, e com a chegada do mundo mobile e de novas tecnologias foi necessária uma mudança para otimização desse protocolo.
+
+Em 2015 surgiu a versão 2 do protocolo HTTP, que traz diversas tecnologias para otimizar, dar segurança e diminuir o tamanho das requisições. 
+Por padrão, no protocolo HTTP versão 1.1 não é necessário o uso da camada de segurança TSL/SSL, mas no HTTP/2 o uso de HTTPS é obrigatório, devido a quantidade de dados críticos que trafegamos na Web, como senhas e dados bancários.
+
+
 As principais diferenças entre o HTTP 1.1 e  HTTP/2 são:
 - Utilização padrão do GZIP, que "comprime" as respostas das requisições.
 - Os headers(cabeçalhos) das requisições e respostas passam a ser binários e são comprimidos usando um algoritmo chamado HPACK para diminuir o volume de dados trafegados;
